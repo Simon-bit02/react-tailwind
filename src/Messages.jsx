@@ -1,5 +1,6 @@
 import faker from 'faker';
 import Message from './Message';
+import React, { useState, useEffect } from 'react';
 
 function Messages() {
   let chat = [
@@ -33,7 +34,7 @@ function Messages() {
     },
   ];
   return (
-    <div className="flex flex-col">
+    <div className="h-full flex flex-col-reverse absolute ml-96 bg-gray-100 dark:bg-kbook-default2 bottom-0 right-0 left-0 overflow-auto">
       {chat.map((chat, i) => {
         return <Message key={i} {...chat}></Message>;
       })}

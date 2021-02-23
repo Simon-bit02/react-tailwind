@@ -16,10 +16,7 @@ function AppConversation() {
 
   return (
     <div className="flex flex-col h-full w-full bg-gray-100 dark:bg-default">
-      {chat.map((chat, i) => {
-        return <ConversationItem key={i} {...chat}></ConversationItem>;
-      })}
-      <div className="flex  h-full w-full bg-gray-100 dark:bg-default">
+      <div className="flex flex-grow h-full w-full bg-gray-100 dark:bg-default">
         <Conversations />
         <Messages />
       </div>

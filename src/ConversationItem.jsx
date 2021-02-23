@@ -41,7 +41,7 @@ function ConversationItem(props) {
       <div className="flex flex-grow flex-col flex-shrink items-start px-3">
         <div className="font-semibold ">{props.username}</div>
         <div className="flex items-center">
-          <div className="font-semibold text-xs text-gray-700 text-left truncate max-w-md ">
+          <div className="font-semibold text-xs flex text-gray-700 text-left truncate max-w-xs ">
             {props.lastMessage}
           </div>
           <RelativeChat {...props} />
