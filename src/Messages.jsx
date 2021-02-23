@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
 import faker from 'faker';
 import Message from './Message';
 
-function MessageProps() {
+function Messages() {
   let chat = [
     {
       direction: faker.random.boolean() ? 'receive' : 'send',
@@ -42,4 +41,4 @@ function MessageProps() {
   );
 }
 
-export default MessageProps;
+export default Messages;
