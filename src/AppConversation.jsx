@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import ConversationItem from './ConversationItem.jsx';
 import MessageProps from './MessageProps';
+import Messages from './Messages';
+import Conversations from './Conversations';
 import faker from 'faker';
 
 function AppConversation() {
@@ -19,8 +21,11 @@ function AppConversation() {
       {chat.map((chat, i) => {
         return <ConversationItem key={i} {...chat}></ConversationItem>;
       })}
+      <div className="flex  h-full w-full bg-gray-100 dark:bg-default">
+        <Conversations />
+        <Messages />
+      </div>
     </div>
   );
 }
-
 export default AppConversation;
