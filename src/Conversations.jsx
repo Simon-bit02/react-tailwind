@@ -12,7 +12,7 @@ function Conversation() {
   }));
 
   return (
-    <div className="h-full w-full max-w-md flex flex-col absolute overflow-y-scroll top-0 dark:bg-kbook-default ">
+    <div className=" max-w-md flex flex-col absolute overflow-y-scroll overflow-x-hidden top-0 dark:bg-kbook-default ">
       <hr className="mx-2 my-0.5 dark:border-white dark:border-opacity-40" />
       {chat.map((chat, i) => {
         return <ConversationItem key={i} {...chat}></ConversationItem>;
